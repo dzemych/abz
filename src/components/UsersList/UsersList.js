@@ -38,18 +38,20 @@ const UsersList = (props) => {
 
    return (
       <div className={classes.container}>
-         {users.length > 0 &&
-            users.map((el, i) => (
-               <User
-                  key={`${el.id}-${i}`}
-                  photo={el.photo}
-                  name={el.name}
-                  email={el.email}
-                  position={el.position}
-                  tel={el.tel}
-               />
-            ))
-         }
+         <div className={classes.users_list}>
+            {users.length > 0 &&
+               users.map((el, i) => (
+                  <User
+                     key={`${el.id}-${i}`}
+                     photo={el.photo}
+                     name={el.name}
+                     email={el.email}
+                     position={el.position}
+                     tel={el.tel}
+                  />
+               ))
+            }
+         </div>
 
          {showMore &&
             <Button
