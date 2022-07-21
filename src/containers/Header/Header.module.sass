@@ -1,0 +1,30 @@
+.container
+  width: 100%
+
+.wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background: white
+  padding: 10px 7px
+
+.icon
+  height: 100%
+  text-align: left
+
+.buttons_container
+  width: 60%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  & button
+    width: 47%
+
+@media (min-width: 768px)
+  .wrapper
+    padding: 10px 20px
+
+  .buttons_container
+    width: 30%

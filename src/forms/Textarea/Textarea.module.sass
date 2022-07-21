@@ -1,0 +1,44 @@
+.container 
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  & input
+    display: none
+
+.errorBorder
+  & .title, & .text
+    border: 2px solid #CB3D40
+  & .title
+    border-right: none
+
+.title, .text
+  padding: 17px
+  font-size: 1.2rem
+
+.title
+  text-align: center
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border: 1px solid black
+
+.text
+  cursor: pointer
+  width: 100%
+  text-align: left
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  border: 1px solid rgba(1,1,1,.4)
+  color: rgba(1,1,1,.35)
+
+.filled
+  color: black
+
+.error
+  color: #CB3D40
+  margin-left: 6px
+  font-size: .9rem
